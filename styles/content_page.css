@@ -1,0 +1,28 @@
+.content_page {
+}
+
+.content_page P {
+	color: #3fa0ff;
+	font-size: 15px; 
+}
+
+.content {
+	display: none;
+	position: absolute;
+	/*border: solid 1px black; */
+	/*padding: 10px;*/
+	margin-right: 115px; 
+	margin-left: 15px;
+	
+ }
+
+ #pic {  
+	 position: absolute;
+	 right: 15px;
+	/* margin-top: 15px;*/
+} 
+
+#pic img {
+	 border: solid 3px #f0e578; 
+	 width: 200px; 
+}

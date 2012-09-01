@@ -1,0 +1,21 @@
+#head {  
+   /* border: solid 1px black; 	*/
+
+    font-size: 20px;
+    /*top: 0;
+/*left: 15px;
+	right: 15px;*/
+ } 
+ .menu {
+}
+ 
+ .menu li {
+	display: inline-block;
+	/*border: solid 1px black;*/ 
+	border: solid 1px #f0e578; 
+	padding: 10px;
+}
+.menu a {
+	color: #3fa0ff;
+	text-decoration: none;
+}

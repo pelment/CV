@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../page.xsl"?>
+
+<b:page>
+ <b:head>
+  <e:logo/>
+  <b:menu>
+   <e:menu__item>Главная</e:menu__item>
+   <e:menu__item>Обо мне</e:menu__item>
+   <e:menu__item>Ответы на технические вопросы</e:menu__item>
+  </b:menu>
+ </b:head>
+ <b:main-layout>
+  <b:text-layout>
+   <e:text/>
+   <e:text/>
+  </b:text-layout>
+  <b:submenu/>
+ </b:main-layout>
+ <b:foot>
+  <e:text>Кафтан Дарья</e:text>
+  <e:text>2012 год</e:text>
+ </b:foot>
+</b:page>

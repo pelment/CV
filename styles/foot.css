@@ -1,0 +1,39 @@
+#foot {    
+	position: absolute;
+	
+	/*vertical-align: middle;*/
+	height: 50px;
+    margin: 15px; 
+	/*border: solid 1px #f0e578; */
+	bottom: 0;
+	left: 0;
+	right: 0;
+}	
+#foot li {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+#foot ul{
+	position: absolute;
+	right: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#foot P {
+	vertical-align: middle;
+    font-size: 15px; 
+	color: #3fa0ff;
+	text-align: center;
+	margin: 0;
+	/*float: left;*/
+}
+
+#foot img {
+	width: 30px;
+	margin: 0;
+}
+  
+ 
