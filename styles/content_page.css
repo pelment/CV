@@ -1,9 +1,13 @@
-.content_page {
+#content_page P {
+	color: black;
+	font-size: 15px; 
+	/*text-align: center;*/
 }
 
-.content_page P {
-	color: #3fa0ff;
-	font-size: 15px; 
+.content #main_content ul{
+	position: relative;
+	display: inline-block;
+	/*margin: 0;*/
 }
 
 .content {
@@ -11,15 +15,44 @@
 	position: absolute;
 	/*border: solid 1px black; */
 	/*padding: 10px;*/
-	margin-right: 115px; 
+	margin-right: 265px; 
 	margin-left: 15px;
 	
  }
+ 
+ .content a {
+	/*color: #3fa0ff;*/
+	color: #007ba7;
+	text-decoration: none;
+}
+ 
+ .content li {
+	display: block;
+	 padding: 0px;
+ }
+ .content img {
+	 width: 10px;
+}
+
+.content .opened {
+	display: none;
+}
+
+.content .closed {
+	display: inline-block;
+}
+ 
+#content_page .content .question {
+	 color: #007ba7;
+}
+
+ #block_experience .answer{
+	 display: block;
+}
 
  #pic {  
 	 position: absolute;
 	 right: 15px;
-	/* margin-top: 15px;*/
 } 
 
 #pic img {

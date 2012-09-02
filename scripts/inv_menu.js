@@ -1,3 +1,6 @@
+// Идея меню с плавным переходом цвета - http://habrahabr.ru/post/149864/
+// 
+
 jQuery.fn.inv_menu = function(options) {
     var options = jQuery.extend({
       bg: '#000', 
@@ -9,8 +12,8 @@ jQuery.fn.inv_menu = function(options) {
       speed: 500 
     },options);
     return this.each(function() {
-	$('div' + '#' + 'main_content').css( {'display': 'block'} );
-	$('div' + '#' + 'main_content' + ' p').css( {'display': 'block'} );
+	$('div' + '#' + 'block_main_content').css( {'display': 'block'} );
+	$('div' + '#' + 'block_main_content' + ' ul').css( {'display': 'inline-block'} );
 		    
         var menu = jQuery(this);
         if( menu.length <= 0)
@@ -65,11 +68,12 @@ jQuery.fn.inv_menu = function(options) {
 		position = $('.' + options.upperclass + ' #' + this.id);
 		current = position;
 	
-		if($('div' + '#' + this.id).css('display') == 'none' ) {
+		if($('div' + '#block_' + this.id).css('display') == 'none' ) {
 			$('div' + '.content').css( { 'display':'none' } );
-			$('div' + '.content' + ' p').slideUp();
-			$('div' + '#' + this.id).css( { 'display':'block' } );
-			$('div' + '#' + this.id + ' p').slideDown();	
+			$('div' + '#block_' + this.id + ' p.answer').css( { 'display':'none' } );
+			$('div' + '#block_' + this.id + ' img.opened').css( { 'display':'none' } );
+			$('div' + '#block_' + this.id + ' img.closed').css( { 'display':'inline-block' } );
+			$('div' + '#block_' + this.id).slideDown();
 			}
 				
 		start.height = current.height() + parseInt( current.css( 'paddingTop' ) ) + parseInt( current.css( 'paddingBottom' ) );

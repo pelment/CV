@@ -1,0 +1,30 @@
+.contentplane {
+	position: relative;
+	display: block;
+	margin-right: 15px; 
+	margin-left: 15px;	
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	display:block;
+}
+ul{
+	display: block;
+}
+
+li {
+	display: block;
+	 padding: 0px;
+ }
+ 
+ #me_pic {
+	position: absolute;
+	right: 15px;
+	top: 75px;
+	border: solid 3px #f0e578; 
+	width: 200px;
+}
+	
