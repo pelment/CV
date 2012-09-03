@@ -16,8 +16,9 @@ function print_cv() {
 	
 	var doc = jQuery(print_win.document);
 	doc.find('div#print *').css( { 'display':'block'} );
-	doc.find('div img').css( { 'display':'none'} );
-	doc.find('p.answer a').css( { 'display':'inline-block'} )
+	doc.find('div#print a').css( { 'display':'block'} );
+	doc.find('div#print a img').css( { 'display':'none'} );
+	doc.find('p.answer a').css( { 'display':'inline-block'} );
 	 
 	print_win.focus();
 	print_win.print();
