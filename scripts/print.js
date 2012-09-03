@@ -21,5 +21,5 @@ function print_cv() {
 	 
 	print_win.focus();
 	print_win.print();
-	print_win.close();		
+	//print_win.close();		
 }
