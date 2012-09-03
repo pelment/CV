@@ -32,6 +32,7 @@
  }
  .content img {
 	 width: 10px;
+	border: none;
 }
 
 .content .opened {
@@ -41,7 +42,7 @@
 .content .closed {
 	display: inline-block;
 }
- 
+
 #content_page .content .question {
 	 color: #007ba7;
 }
