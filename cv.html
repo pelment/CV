@@ -7,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/foot.css">
 	<link id='print' rel="stylesheet" media="print" type="text/css" href="styles/print.css">
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js" type="text/javascript"></script>
-	<script src="http://code.jquery.com/jquery-1.4.1-vsdoc.js" type="text/javascript"></script>
+	<script src="./scripts/jquery-1.8.1.js" type="text/javascript"></script>
 	<script src="./scripts/inv_menu.js" type="text/javascript"></script>
 	<script src="./scripts/unroll_paragraph.js" type="text/javascript"></script>
 	<script src="./scripts/print.js" type="text/javascript"></script>
@@ -19,8 +18,7 @@
 	</script>
 	<script>
 		$(window).scroll(function () {
-			$('div#foot').stop().animate({ top: $(document).scrollTop()+$('div#conteiner').height() - 
-						$('div#foot').height() }, 50 );
+			$('div#foot').stop().animate({ bottom: - $(window).scrollTop()}, 50 );
 
 		});
 	</script>
@@ -36,7 +34,7 @@
 	 });
 	 function foot_resize() {
 		var foot = $( 'div#foot' );
-		if( $( 'div#foot' ).height() > 0.25 * $(window).height() ) {
+		if( $( 'div#foot' ).height() > 0.15 * $(window).height() ) {
 			$( 'div#foot' ).css( { 'display':'none' } );
 		}
 		else if($( 'div#foot' ).css( 'display' ) == 'none' ) {

@@ -5,7 +5,7 @@ function print_cv() {
 	var print_css = '<link rel="stylesheet" href="./styles/print.css" type="text/css" />';
 	var print_win = window.open('','','left=50,top=50,width=800,height=640,toolbar=0,scrollbars=1,status=0');
 	
-	print_win.document.write('<img id="me_pic" src="./pics/me.jpg">');
+	print_win.document.write('<img id="me_pic" src="./pics/me_normal.jpg">');
 	print_win.document.write('<div id="print" class="contentpane">');
 	print_win.document.write(print_css);
 	print_win.document.write(print_block1.innerHTML);
